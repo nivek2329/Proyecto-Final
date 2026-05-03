@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MenuScreen
+comment0.text=\r\n\ Panel\ principal\ que\ representa\ la\ pantalla\ de\ inicio\ del\ videojuego.\r\n\ Muestra\ el\ t\u00EDtulo,\ la\ versi\u00F3n\ y\ las\ opciones\ disponibles\ para\ el\ usuario.\r\n\r\n\ @author\ Angel-Garcia\r\n\ @version\ 2026-1\r\n
+comment1.params=onPlayGame
+comment1.target=MenuScreen(java.lang.Runnable)
+comment1.text=\r\n\ Crea\ el\ panel\ de\ men\u00FA\ con\ la\ acci\u00F3n\ de\ inicio\ de\ partida\ indicada.\r\n\r\n\ @param\ onPlayGame\ acci\u00F3n\ que\ se\ ejecuta\ al\ seleccionar\ la\ opci\u00F3n\ de\ jugar\r\n
+comment2.params=
+comment2.target=void\ buildButtons()
+comment3.params=graphics
+comment3.target=void\ paintComponent(java.awt.Graphics)
+comment4.params=size\ style
+comment4.target=java.awt.Font\ loadFont(float,\ int)
+numComments=5

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BasicEnemyTest
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ tearDown()
+comment3.params=
+comment3.target=void\ shouldHorizontalIzquierdaAvanzaDespuesDeCuatroTicks()
+comment4.params=
+comment4.target=void\ shouldHorizontalRebotaEnPared()
+comment5.params=
+comment5.target=void\ shouldNotHorizontalEntraEnZonaVerdeEnemigo()
+comment6.params=
+comment6.target=void\ shouldVerticalDesdeArribaSeMueveConTick()
+comment7.params=
+comment7.target=void\ shouldGetColorBlue()
+numComments=8

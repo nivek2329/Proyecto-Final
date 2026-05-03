@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=HardestGameException
+comment0.text=\r\n\ Excepci\u00F3n\ personalizada\ del\ juego\ para\ errores\ de\ configuraci\u00F3n\ y\ l\u00F3gica.\r\n\r\n\ @author\ Angel-Garcia\r\n\ @version\ 2026-1\r\n
+comment1.params=message
+comment1.target=HardestGameException(java.lang.String)
+comment1.text=\r\n\ Crea\ una\ excepci\u00F3n\ con\ un\ mensaje\ descriptivo.\r\n\r\n\ @param\ message\ descripci\u00F3n\ del\ error\r\n
+comment2.params=message\ cause
+comment2.target=HardestGameException(java.lang.String,\ java.lang.Throwable)
+comment2.text=\r\n\ Crea\ una\ excepci\u00F3n\ con\ un\ mensaje\ y\ la\ causa\ original.\r\n\r\n\ @param\ message\ descripci\u00F3n\ del\ error\r\n\ @param\ cause\ \ \ causa\ original\ de\ la\ excepci\u00F3n\r\n
+numComments=3

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=YellowCoin
+comment0.text=\r\n\ Clase\ concreta\ que\ representa\ una\ moneda\ de\ color\ amarillo.\r\n\ El\ jugador\ debe\ recolectar\ todas\ las\ monedas\ para\ completar\ el\ nivel.\r\n\r\n\ @author\ Angel-Garcia\r\n\ @version\ 2026-1\r\n
+comment1.params=row\ col
+comment1.target=YellowCoin(int,\ int)
+comment1.text=\r\n\ Crea\ una\ moneda\ amarilla\ en\ la\ posici\u00F3n\ indicada.\r\n\r\n\ @param\ row\ fila\ del\ tablero\ donde\ se\ ubica\ la\ moneda\r\n\ @param\ col\ columna\ del\ tablero\ donde\ se\ ubica\ la\ moneda\r\n
+comment2.params=
+comment2.target=java.awt.Color\ getColor()
+comment2.text=\r\n\ Retorna\ el\ color\ amarillo\ de\ la\ moneda.\r\n\r\n\ @return\ Color.YELLOW\r\n
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment3.text=\r\n\ Retorna\ el\ tipo\ de\ moneda\ como\ cadena\ de\ texto.\r\n\r\n\ @return\ "YELLOW"\r\n
+numComments=4
