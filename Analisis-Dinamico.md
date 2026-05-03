@@ -23,9 +23,13 @@ El cubrimiento inicial fue el siguiente:
 
 Al revisar el reporte, se identificaron los siguientes puntos:
 
-### Porcentaje total bajo (54% líneas, 47% branch)
+### Deciciones tomadas:
 
 El porcentaje global bajo no refleja un problema en la lógica del juego sino que está **completamente determinado por la capa de presentación**, que representa 305 líneas sin ninguna cobertura. Las clases `GameGUI`, `BoardPanel` y `MenuScreen` dependen de componentes Swing (timers, eventos de teclado, renderizado gráfico) que no pueden instanciarse ni ejecutarse en un contexto de prueba JUnit estándar sin frameworks especializados de UI testing. Esta es una limitación técnica conocida del análisis dinámico sobre código de interfaz gráfica, no un déficit de pruebas.
+
+El cubrimiento inicial fue el siguiente:
+
+![Reporte Inicial de Cobertura]([https://github.com/nivek2329/DOPO-2026/blob/main/imagenes/1.png?raw=true](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/2.webp?raw=true))
 
 ### Dominio bien cubierto desde el inicio
 
@@ -50,6 +54,8 @@ Tras la adición de pruebas complementarias, se obtuvieron los siguientes result
 | presentation   | 0% (0/5)      | 0% (0/36)      | 0% (0/305)     | 0% (0/104)     |
 | domain         | 100% (14/14)  | 98% (82/83)    | 94% (204/216)  | 81% (99/122)   |
 | test           | 100% (7/7)    | 100% (57/57)   | 100% (222/222) | 95% (19/20)    |
+
+![Reporte Final de Cobertura]([https://github.com/nivek2329/DOPO-2026/blob/main/imagenes/6.png?raw=true](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/5.webp?raw=true))
 
 ### Por qué el total global no supera el 57%
 
