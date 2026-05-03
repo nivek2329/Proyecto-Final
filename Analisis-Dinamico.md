@@ -29,7 +29,7 @@ El porcentaje global bajo no refleja un problema en la lógica del juego sino qu
 
 El cubrimiento inicial fue el siguiente:
 
-![Reporte Inicial de Cobertura]([https://github.com/nivek2329/DOPO-2026/blob/main/imagenes/1.png?raw=true](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/2.webp?raw=true))
+![Reporte Inicial de Cobertura](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/2.webp?raw=true)
 
 ### Dominio bien cubierto desde el inicio
 
@@ -55,7 +55,7 @@ Tras la adición de pruebas complementarias, se obtuvieron los siguientes result
 | domain         | 100% (14/14)  | 98% (82/83)    | 94% (204/216)  | 81% (99/122)   |
 | test           | 100% (7/7)    | 100% (57/57)   | 100% (222/222) | 95% (19/20)    |
 
-![Reporte Final de Cobertura]([https://github.com/nivek2329/DOPO-2026/blob/main/imagenes/6.png?raw=true](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/5.webp?raw=true))
+![Reporte Final de Cobertura](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/5.webp?raw=true)
 
 ### Por qué el total global no supera el 57%
 
