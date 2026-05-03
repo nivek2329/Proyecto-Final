@@ -17,6 +17,7 @@ El escaneo inicial sobre los 21 archivos del proyecto arrojó **434 violaciones*
 | errorprone     | 14            |
 | **Total**      | **434**       |
 
+![Reporte Inicial PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/1.webp?raw=true)
 Las violaciones más frecuentes fueron:
 
 - **`documentation` — CommentRequired y CommentSize (152):** Métodos y constructores sin Javadoc completo, o con descripciones de menos de 10 palabras. Afectaba a todas las clases de dominio y a los archivos de prueba.
@@ -41,6 +42,9 @@ Las correcciones se aplicaron en iteraciones sucesivas:
 | Final     | 289   | Renombre de variables cortas (`dr`→`deltaRow`, `dc`→`deltaCol`, `nr`→`nextRow`, `e`→`enemy`, `z`→`zone`, `f`→`file`) |
 
 ---
+
+![Reporte Inicial PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/3.webp?raw=true)
+![Reporte Inicial PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/4.webp?raw=true)
 
 ## 3. Decisiones Tomadas
 
@@ -79,6 +83,8 @@ Las correcciones se aplicaron en iteraciones sucesivas:
 | errorprone     | 14      | 14      |
 | **Total**      | **434** | **289** |
 
+
+![Reporte Inicial PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/6.webp?raw=true)
 > **Nota sobre `codestyle`:** El número final es igual al inicial porque las correcciones aplicadas en esa categoría (constructores, llaves, `final`) fueron compensadas por nuevas detecciones generadas al renombrar variables (e.g. `LongVariable`). La reducción neta de 145 violaciones se concentra en `documentation` y `bestpractices`.
 
 ### Conclusión
