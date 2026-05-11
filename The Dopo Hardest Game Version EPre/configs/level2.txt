@@ -1,0 +1,19 @@
+# Nivel 2 — tablero compacto (segunda configuración .txt del proyecto).
+
+ROWS 6
+COLS 12
+TIME 120
+
+SAFE_START 0 0 6 2
+SAFE_FINAL 0 10 6 2
+
+COIN YELLOW 2 5
+COIN YELLOW 3 6
+
+ENEMY BASIC 2 4 VERTICAL
+
+WALL 1 3
+WALL 2 3
+WALL 3 3
+WALL 4 8
+WALL 4 9
