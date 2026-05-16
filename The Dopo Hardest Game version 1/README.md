@@ -1,192 +1,52 @@
-# The DOPO Hardest Game — Entrega final
+# DOPO-2026 — The DOPO Hardest Game
 
-Clon en Java (Swing) del clásico *The World's Hardest Game*, con tablero por archivos de texto, varios tipos de enemigos, jugadores con habilidades distintas, multijugador local y guardado de partida.
+Versión del videojuego *The World's Hardest Game*, desarrollada como proyecto de la asignatura **Programación Orientada a Objetos** de la **Escuela Colombiana de Ingeniería Julio Garavito**.
 
-**Curso:** EPRE · **Versión:** 2026-1  
-**Autor en código:** Angel-Garcia
-
----
-
-## Cómo ejecutar
-
-1. Abrir el módulo `epre/` en IntelliJ IDEA (o IDE compatible con Java).
-2. Ejecutar `main.presentation.GameGUI`.
-3. Los niveles están en `configs/`. Ejecutar desde la raíz del repositorio para que las rutas relativas funcionen.
-
-**Pruebas unitarias (JUnit 4):**
-
-```bash
-cd epre
-javac -encoding UTF-8 -sourcepath "src/main;src/test" -d out -cp "out;%USERPROFILE%\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar"
-java -cp "out;..." org.junit.runner.JUnitCore test.HardestGameTest
-```
+**Autores:** Kevin Angel · Santiago Garcia  
+**Versión:** 1.0 — 2026-1
 
 ---
 
-## Arquitectura (resumen)
+##  Descripción del proyecto
+El jugador controla un cuadrado rojo que debe recolectar todas las monedas amarillas del tablero y llegar a la zona segura final antes de que se agote el tiempo, evitando el contacto con los enemigos azules. 
 
-| Capa | Paquete | Responsabilidad |
-|------|---------|-----------------|
-| Dominio | `main.domain` | Reglas del juego, entidades, excepciones, carga de niveles |
-| Presentación | `main.presentation` | Menú, ventana, tablero gráfico, guardado/carga, reportes |
-| Pruebas | `test` | Unitarias e integración por componente |
+*   **Mecánica:** Cada colisión reinicia al jugador en la zona de inicio y suma una muerte al contador. 
+*   **Victoria:** El nivel se completa cuando todas las monedas han sido recolectadas y el jugador alcanza la zona segura final.
 
----
-
-## Ciclos de desarrollo
-
-El proyecto se construyó de forma incremental. Cada **ciclo** agrupa entregables funcionales; cada **mini-ciclo** es un bloque verificable (código + pruebas + nivel de ejemplo).
-
-### Ciclo 1 — Tablero, jugador y victoria básica
-
-**Objetivo:** Tener un juego jugable en una sola pantalla: mover al jugador, recolectar monedas, ganar o perder por tiempo, con niveles definidos en archivo.
-
-| Mini-ciclo | Objetivo | Entregables principales |
-|------------|----------|------------------------|
-| **1.1** Modelo del tablero | Representar celdas, muros y zonas seguras. | `Board`, `Zone`, validación de movimiento |
-| **1.2** Jugador y movimiento | Un jugador controlable con reglas de desplazamiento. | `Player`, `RedPlayer`, `HardestGame.movePlayer` |
-| **1.3** Carga de niveles | Leer dimensiones, tiempo, muros y monedas desde `.txt`. | `GameConfiguration`, excepciones de formato |
-| **1.4** Monedas y victoria | Recolectar monedas amarillas y llegar a la zona final. | `YellowCoin`, condición de victoria, contador |
-| **1.5** Interfaz mínima | Ver el tablero y jugar con teclado. | `GameGUI`, `BoardPanel`, barra de estado |
+### Elementos del juego
+| Elemento | Descripción |
+| :--- | :--- |
+| **RedPlayer** | Jugador estándar, velocidad y tamaño normales. |
+| **BasicEnemy** | Enemigo que se desplaza en línea recta, rebotando en paredes y zonas seguras. |
+| **YellowCoin** | Moneda que debe recolectarse para completar el nivel. |
+| **Zona inicial** | Punto de aparición y reaparición del jugador. |
+| **Zona final** | Destino que el jugador debe alcanzar con todas las monedas. |
 
 ---
 
-### Ciclo 2 — Enemigos, muerte y robustez
+## Pasos para iniciar el proyecto en IntelliJ IDEA
 
-**Objetivo:** Añadir peligro real (enemigos), ciclo muerte–respawn, reinicio de progreso y manejo de errores sin romper la partida.
+Para poner en marcha el proyecto correctamente, siga estas instrucciones:
 
-| Mini-ciclo | Objetivo | Entregables principales |
-|------------|----------|------------------------|
-| **2.1** Enemigo básico | Patrulla horizontal o vertical con rebote. | `Enemy`, `BasicEnemy` |
-| **2.2** Colisión y muerte | Choque con enemigo incrementa muertes y respawnea. | `checkEnemyCollisionForPlayer`, `respawn` |
-| **2.3** Tiempo y derrota | Cuenta regresiva; al llegar a 0 → `LOST`. | `decrementTime`, estados `WON` / `LOST` |
-| **2.4** Excepciones de dominio | Errores tipados y mensajes claros al usuario. | Jerarquía `HardestGameException` |
-| **2.5** Registro de errores | Log en disco de fallos internos. | `GameLog`, `GameLogger`, `logs/game_errors.log` |
-| **2.6** Pausa y reinicio | Pausar partida y recargar nivel actual. | `togglePause`, tecla `P` / botones |
+1.  **Abrir el proyecto:** Importe la carpeta raíz en IntelliJ IDEA.
+2.  **Configurar dependencias:** Asegúrese de tener **JUnit 4** configurado en el *Build Path*.
+3.  **Ejecutar la aplicación:** Localice la clase `GameGUI` y ejecute el método `main`.
+4.  **Ejecutar pruebas con cobertura:** Haga clic derecho sobre el paquete `test` y seleccione **Run 'All Tests' with Coverage**.
 
----
+ ---
 
-### Ciclo 3 — Jugadores especiales, power-ups y checkpoint
+## Análisis de calidad
 
-**Objetivo:** Diversificar mecánicas: skins, monedas especiales, trampas, vidas extra y punto de control intermedio.
-
-| Mini-ciclo | Objetivo | Entregables principales |
-|------------|----------|------------------------|
-| **3.1** Jugador azul | Hitbox ampliada (colisión en cruz). | `BluePlayer`, `Enemy.collidesWith` |
-| **3.2** Jugador verde (Clyde) | Escudo que absorbe un golpe; ralentización tras usarlo. | `GreenPlayer`, inmunidad temporal |
-| **3.3** Moneda skin | Cambio temporal de personaje hasta morir. | `SkinCoin`, `applyCoinEffect`, restauración al morir |
-| **3.4** Power-ups | Bomba (muerte) y fuente de vida (vida extra permanente). | `Bomb`, `LifeSource` |
-| **3.5** Checkpoint intermedio | Zona `SAFE_INTERMEDIATE`; monedas previas quedan fijas. | `checkIntermediateZone`, `markPermanent` |
-| **3.6** Nivel 3 (diseño U) | Ruta en U con formaciones en X y monedas skin abajo. | `configs/level3.txt` |
+- **Análisis dinámico:** ver [`Analisis-Dinamico.md`](./Analisis-Dinamico.md)
+- **Análisis estático:** ver [`Analisis-Estatico.md`](./Analisis-Estatico.md)
 
 ---
 
-### Ciclo 4 — Menú, multijugador e IA
-
-**Objetivo:** Pantalla de inicio configurable, modos 1J / PvP / PvM y máquina que compite por monedas.
-
-| Mini-ciclo | Objetivo | Entregables principales |
-|------------|----------|------------------------|
-| **4.1** Menú principal | Elegir nivel, modalidad, skins y colores de borde. | `MenuScreen`, `GameSetup` |
-| **4.2** Multijugador local | Dos jugadores (flechas vs WASD); meta cruzada. | `twoPlayerMode`, `moveSecondPlayer` |
-| **4.3** Colisión entre jugadores | Misma celda → ambos vuelven a su inicio. | `checkPlayerCollision` |
-| **4.4** Modo vs máquina | Segundo jugador controlado por IA. | `computeMachineMove`, BFS de rutas |
-| **4.5** Máquina experta | Orden de monedas por distancia mínima. | `buildExpertTargets` |
-| **4.6** Reporte de errores | El usuario describe fallos desde el juego. | `ErrorReportDialog`, `logs/user_reports.log` |
 
 ---
-
-### Ciclo 5 — Enemigos avanzados, persistencia y entrega final
-
-**Objetivo:** Completar el catálogo de enemigos del enunciado, guardar/cargar partida y consolidar niveles de demostración.
-
-| Mini-ciclo | Objetivo | Entregables principales |
-|------------|----------|------------------------|
-| **5.1** Deslizador vertical (Tipo V) | Solo movimiento vertical; rebote; ritmo lento. | `VerticalEnemy` |
-| **5.2** Acelerado (Tipo A) | Línea recta al doble de velocidad. | `AcceleratedEnemy` |
-| **5.3** Patrullero azul | Recorrido del perímetro de una zona (figura geométrica). | `PatrolEnemy`, filtrado de waypoints en zonas prohibidas |
-| **5.4** Guardar / cargar partida | Archivo `.dopo` elegido por el usuario (diálogo del sistema). | `GameSaveIO`, `GameSaveDialog`, `GameSnapshot` |
-| **5.5** Niveles y demo | Pack de niveles + `demo_final` con todos los elementos. | `configs/*.txt`, `LoadAllLevelsTest` |
-| **5.6** Pruebas automatizadas | Cobertura de dominio y configuración. | `src/test/*` |
-
----
-
-## Requisitos no contemplados en esta entrega
-
-Los siguientes puntos **no se implementaron** (por alcance, tiempo o porque quedaron fuera del enunciado acordado). No se evalúan como parte de este repositorio:
-
-| Área | Requisito no considerado |
-|------|-------------------------|
-| **Gráficos** | Sprites, animaciones de personajes o tiles artísticos (solo formas geométricas: cuadrados, círculos, colores). |
-| **Audio** | Música, efectos de sonido o voz. |
-| **Red** | Multijugador en línea, salas, matchmaking o sincronización por red. |
-| **Enemigos** | Formaciones en X que **giran como un solo cuerpo**; cada enemigo se mueve con su propia lógica. |
-| **Editor** | Editor gráfico de niveles dentro del juego (los niveles se editan en `.txt` a mano). |
-| **Persistencia** | Guardado en la nube, cuentas de usuario o ranking global persistente. |
-| **Plataformas** | Versión web, móvil o consola. |
-| **Idioma** | Interfaz solo en español (sin i18n). |
-| **Generación** | Niveles generados proceduralmente o aleatorios en tiempo de ejecución. |
-| **Narrativa** | Modo historia, cinemáticas o misiones con diálogos. |
-| **Integraciones** | Login OAuth, APIs externas, tablas de clasificación online. |
-| **Contenido extra** | Ampliación masiva de niveles más allá del set en `configs/` (tamaños compactos tipo referencia TWHG). |
-
-Si el enunciado oficial del curso lista otros ítems explícitos como “opcionales” o “bonus”, conviene contrastarlos con la rúbrica del profesor y añadirlos aquí.
-
----
-
-## Niveles incluidos
-
-| Archivo | Descripción breve |
-|---------|-------------------|
-| `level1.txt` | Referencia tipo TWHG (tablero ancho) |
-| `level2.txt` | Compacto con skin coins y enemigos variados |
-| `level3.txt` | Ruta en U, checkpoint, formaciones en X |
-| `demo_final.txt` | Demostración de todos los elementos |
-| `nivelsupremo.txt` | Desafío con ramas laterales |
-| `level_gemas.txt` | Medio, checkpoint |
-| `level_relampago.txt` | Corto, poco tiempo |
-| `level_duelo.txt` | Orientado a PvP / PvM |
-
----
-
-## Formato de archivo de nivel (resumen)
-
-```
-ROWS <filas>
-COLS <columnas>
-TIME <segundos>
-SAFE_START <fila> <col> <alto> <ancho>
-SAFE_INTERMEDIATE ...   (opcional)
-SAFE_FINAL ...
-COIN YELLOW <fila> <col>
-COIN SKIN <RED|BLUE|GREEN> <fila> <col>
-POWERUP BOMB|LIFE <fila> <col>
-ENEMY BASIC <fila> <col> HORIZONTAL|VERTICAL [LEFT|RIGHT]
-ENEMY VERTICAL <fila> <col>
-ENEMY ACCEL <fila> <col> HORIZONTAL|VERTICAL [LEFT|RIGHT]
-ENEMY PATROL <fila> <col> [<zonaFila> <zonaCol>] <filasZona> <colsZona>
-WALL <fila> <col>
-```
-
----
-
-## Estructura del repositorio
-
-```
-epre 2/
-├── README.md
-├── configs/          # Niveles (.txt)
-├── logs/             # Errores y reportes de usuario (generados al jugar)
-├── saves/            # Partidas guardadas (.dopo), opcional
-└── epre/
-    └── src/
-        ├── main/domain/
-        ├── main/presentation/
-        └── test/
-```
-
----
-
-## Licencia y uso académico
-
-Proyecto con fines educativos (EPRE 2026-1). Consultar con el docente del curso antes de reutilizar o publicar fuera del contexto académico.
+##  Referencias
+* Barnes, D. J., & Kölling, M. (2016). *Objects First with Java: A Practical Introduction Using BlueJ*.
+* Oracle. (2024). *Java SE 21 Documentation*.
+* Wikipedia. (2025). *The World's Hardest Game*.
+* Escuela Colombiana de Ingeniería. (2026). *Enunciado The DOPO Hardest Game*.
+* PMD. (2024). *PMD for Eclipse Plugin*.
