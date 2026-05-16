@@ -81,7 +81,7 @@ El proyecto se construyó de forma incremental. Cada **ciclo** agrupa entregable
 
 ---
 
-### Ciclo 4 — Menú, multijugador e IA
+### Ciclo 4 — Menú, multijugador e IA de maquinas
 
 **Objetivo:** Pantalla de inicio configurable, modos 1J / PvP / PvM y máquina que compite por monedas.
 
@@ -119,18 +119,7 @@ Los siguientes puntos **no se implementaron** (por alcance, tiempo o porque qued
 |------|-------------------------|
 | **Gráficos** | Sprites, animaciones de personajes o tiles artísticos (solo formas geométricas: cuadrados, círculos, colores). |
 | **Audio** | Música, efectos de sonido o voz. |
-| **Red** | Multijugador en línea, salas, matchmaking o sincronización por red. |
 | **Enemigos** | Formaciones en X que **giran como un solo cuerpo**; cada enemigo se mueve con su propia lógica. |
-| **Editor** | Editor gráfico de niveles dentro del juego (los niveles se editan en `.txt` a mano). |
-| **Persistencia** | Guardado en la nube, cuentas de usuario o ranking global persistente. |
-| **Plataformas** | Versión web, móvil o consola. |
-| **Idioma** | Interfaz solo en español (sin i18n). |
-| **Generación** | Niveles generados proceduralmente o aleatorios en tiempo de ejecución. |
-| **Narrativa** | Modo historia, cinemáticas o misiones con diálogos. |
-| **Integraciones** | Login OAuth, APIs externas, tablas de clasificación online. |
-| **Contenido extra** | Ampliación masiva de niveles más allá del set en `configs/` (tamaños compactos tipo referencia TWHG). |
-
-Si el enunciado oficial del curso lista otros ítems explícitos como “opcionales” o “bonus”, conviene contrastarlos con la rúbrica del profesor y añadirlos aquí.
 
 ---
 
