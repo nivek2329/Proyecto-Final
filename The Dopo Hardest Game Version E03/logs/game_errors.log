@@ -1,0 +1,1396 @@
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 16:39:18
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/demo_final.txt: Token de configuración desconocido: LIFE
+Excepción  : main.domain.HardestGameException
+Detalle    : Token de configuración desconocido: LIFE
+StackTrace :
+  at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+  at main.domain.GameConfiguration.parseLine(GameConfiguration.java:75)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:54)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:97)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:157)
+  at main.presentation.GameGUI.startGame(GameGUI.java:144)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:157)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:135)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 16:39:35
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/demo_final.txt: Token de configuración desconocido: LIFE
+Excepción  : main.domain.HardestGameException
+Detalle    : Token de configuración desconocido: LIFE
+StackTrace :
+  at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+  at main.domain.GameConfiguration.parseLine(GameConfiguration.java:75)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:54)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:97)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:157)
+  at main.presentation.GameGUI.startGame(GameGUI.java:144)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:157)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:135)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+
+[INFO] 2026-05-16 16:41:30 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 16:51:43 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:51:43 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:51:43 — Checkpoint intermedio activado — monedas previas fijadas
+may 16, 2026 4:51:43 P. M. main.domain.Board setWall
+SEVERE: Muro fuera del tablero en (-1,0)
+may 16, 2026 4:51:43 P. M. main.domain.GameConfiguration validate
+SEVERE: Falta SAFE_START en la configuración
+
+[INFO] 2026-05-16 16:51:43 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:51:43 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:51:43 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:51:43 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:51:43 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:51:43 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:51:43 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:52:04 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:52:04 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:52:04 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 16:52:04 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:04 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:04 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:04 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:52:04 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:04 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:04 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:52:56 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:52:56 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:52:56 — Checkpoint intermedio activado — monedas previas fijadas
+may 16, 2026 4:52:56 P. M. main.domain.Board setWall
+SEVERE: Muro fuera del tablero en (-1,0)
+may 16, 2026 4:52:56 P. M. main.domain.GameConfiguration validate
+SEVERE: Falta SAFE_START en la configuración
+
+[INFO] 2026-05-16 16:52:56 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:56 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:56 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:56 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:52:56 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:56 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:52:56 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:53:12 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:12 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:12 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:12 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:53:12 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:13 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:13 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:53:13 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:53:13 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:53:13 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 16:53:36 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:53:36 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:53:36 — Checkpoint intermedio activado — monedas previas fijadas
+may 16, 2026 4:53:36 P. M. main.domain.Board setWall
+SEVERE: Muro fuera del tablero en (-1,0)
+may 16, 2026 4:53:36 P. M. main.domain.GameConfiguration validate
+SEVERE: Falta SAFE_START en la configuración
+
+[INFO] 2026-05-16 16:53:36 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:36 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:36 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:36 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:53:36 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:36 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:53:36 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:53:54 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:53:54 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:53:54 — Checkpoint intermedio activado — monedas previas fijadas
+may 16, 2026 4:54:14 P. M. main.domain.Board setWall
+SEVERE: Muro fuera del tablero en (-1,0)
+may 16, 2026 4:54:14 P. M. main.domain.GameConfiguration validate
+SEVERE: Falta SAFE_START en la configuración
+
+[INFO] 2026-05-16 16:54:32 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:32 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:32 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:32 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:54:32 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:32 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:32 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:54:55 — Colisión jugador-jugador: ambos reiniciados a inicio
+may 16, 2026 4:54:55 P. M. main.domain.HardestGame movePlayer
+SEVERE: movePlayer no permitido en estado PAUSED
+
+[INFO] 2026-05-16 16:54:55 — Checkpoint intermedio activado — monedas previas fijadas
+may 16, 2026 4:54:55 P. M. main.domain.Board setWall
+SEVERE: Muro fuera del tablero en (-1,0)
+may 16, 2026 4:54:55 P. M. main.domain.GameConfiguration validate
+SEVERE: Falta SAFE_START en la configuración
+
+[INFO] 2026-05-16 16:54:55 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:55 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:55 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:55 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:54:55 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:55 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:54:55 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:55:51 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:55:52 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:56:01 — Checkpoint intermedio activado — monedas previas fijadas
+may 16, 2026 4:56:25 P. M. main.domain.GameConfiguration parseLineContent
+SEVERE: Token desconocido en línea 15: LIFE
+may 16, 2026 4:56:25 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+[CONFIG_INVALID] Token desconocido en línea 15: LIFE
+	at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+	at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+	at main.presentation.GameGUI.startGame(GameGUI.java:156)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 16:56:25
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : Token desconocido en línea 15: LIFE
+StackTrace :
+  at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+  at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+  at main.presentation.GameGUI.startGame(GameGUI.java:156)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+
+[INFO] 2026-05-16 16:56:40 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:56:42 — Vida extra para Jugador 1 (total: 2)
+
+[INFO] 2026-05-16 16:56:43 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 16:56:44 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:56:44 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:56:53 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:56:53 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:56:58 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:57:01 — Vida extra para Jugador 1 (total: 2)
+
+[INFO] 2026-05-16 16:57:04 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:57:08 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:57:12 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:57:14 — Vida extra para Jugador 1 (total: 2)
+
+[INFO] 2026-05-16 16:57:15 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:57:16 — Vida extra consumida por Jugador 1
+
+[INFO] 2026-05-16 16:57:18 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 16:57:31 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:57:45 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:57:53 — Vida extra para Jugador 1 (total: 2)
+
+[INFO] 2026-05-16 16:58:04 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:05 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:58:07 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:08 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:58:11 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:12 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:12 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:58:16 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:16 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:17 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:19 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 16:58:41 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:45 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:47 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:54 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:58:58 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:59:01 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:59:01 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:59:03 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:59:05 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:59:06 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 16:59:07 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 17:03:46 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:03:46 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:03:46 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:03:46 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:03:46 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:03:46 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:03:46 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:03:46 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:03:46 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:03:46 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:03:46 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:04:16 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:04:16 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:04:16 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:04:16 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:04:42 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:04:42 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:04:42 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:04:42 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:05:25 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:05:25 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:25 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:05:25 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:05:25 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:05:25 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:25 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:25 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:25 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:05:25 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:25 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:25 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:05:47 — Colisión jugador-jugador: ambos reiniciados a inicio
+
+[INFO] 2026-05-16 17:05:47 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:05:47 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:47 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:47 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:47 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:05:47 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:47 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:47 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:05:47 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:05:47 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:05:47 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:05:47 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:05:47 — Clyde absorbió un golpe con su escudo
+may 16, 2026 5:06:45 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (2,5)
+may 16, 2026 5:06:45 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+[CONFIG_INVALID] ENEMY colocado sobre un muro en (2,5)
+	at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+	at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+	at main.presentation.GameGUI.startGame(GameGUI.java:156)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:06:45
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : ENEMY colocado sobre un muro en (2,5)
+StackTrace :
+  at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+  at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+  at main.presentation.GameGUI.startGame(GameGUI.java:156)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+may 16, 2026 5:06:59 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (2,5)
+may 16, 2026 5:06:59 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+[CONFIG_INVALID] ENEMY colocado sobre un muro en (2,5)
+	at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+	at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+	at main.presentation.GameGUI.startGame(GameGUI.java:156)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:06:59
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : ENEMY colocado sobre un muro en (2,5)
+StackTrace :
+  at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+  at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+  at main.presentation.GameGUI.startGame(GameGUI.java:156)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+may 16, 2026 5:07:11 P. M. main.domain.GameConfiguration parseLineContent
+SEVERE: Token desconocido en línea 15: LIFE
+may 16, 2026 5:07:11 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+[CONFIG_INVALID] Token desconocido en línea 15: LIFE
+	at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+	at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+	at main.presentation.GameGUI.startGame(GameGUI.java:156)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:07:11
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : Token desconocido en línea 15: LIFE
+StackTrace :
+  at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+  at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+  at main.presentation.GameGUI.startGame(GameGUI.java:156)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+
+[INFO] 2026-05-16 17:07:28 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:07:30 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:07:36 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:07:41 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:07:43 — Vida extra para Jugador 1 (total: 2)
+
+[INFO] 2026-05-16 17:07:46 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:07:46 — Vida extra absorbió un golpe para Jugador 1 (restantes: 1)
+
+[INFO] 2026-05-16 17:07:47 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:07:57 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:07:59 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:08:00 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:08:09 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:08:12 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:08:39 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:08:45 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:08:46 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:08:55 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:08:55 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:09:06 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:09:09 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:09:10 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:09:12 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+may 16, 2026 5:09:28 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (2,5)
+may 16, 2026 5:09:28 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+[CONFIG_INVALID] ENEMY colocado sobre un muro en (2,5)
+	at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+	at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+	at main.presentation.GameGUI.startGame(GameGUI.java:156)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:09:28
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : ENEMY colocado sobre un muro en (2,5)
+StackTrace :
+  at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+  at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:114)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:171)
+  at main.presentation.GameGUI.startGame(GameGUI.java:156)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:163)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:141)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+
+[INFO] 2026-05-16 17:09:43 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:09:47 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:09:53 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:09:57 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:10:01 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:10:05 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:10:08 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:10:11 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:10:11 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:10:16 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:10:18 — Vida extra para Jugador 1 (total: 2)
+
+[INFO] 2026-05-16 17:10:19 — Clyde absorbió un golpe con su escudo
+
+[INFO] 2026-05-16 17:10:21 — Vida extra absorbió un golpe para Jugador 1 (restantes: 1)
+
+[INFO] 2026-05-16 17:10:21 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:10:23 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+may 16, 2026 5:24:44 P. M. main.domain.GameConfiguration parseLineContent
+SEVERE: Token desconocido en línea 15: LIFE
+may 16, 2026 5:24:44 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+[CONFIG_INVALID] Token desconocido en línea 15: LIFE
+	at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+	at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:238)
+	at main.presentation.GameGUI.beginGameSession(GameGUI.java:213)
+	at main.presentation.GameGUI.startGame(GameGUI.java:93)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:24:44
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : Token desconocido en línea 15: LIFE
+StackTrace :
+  at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+  at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:238)
+  at main.presentation.GameGUI.beginGameSession(GameGUI.java:213)
+  at main.presentation.GameGUI.startGame(GameGUI.java:93)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+may 16, 2026 5:30:26 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (2,5)
+may 16, 2026 5:30:26 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+[CONFIG_INVALID] ENEMY colocado sobre un muro en (2,5)
+	at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+	at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+	at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+	at main.presentation.GameGUI.startGame(GameGUI.java:93)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:30:26
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : ENEMY colocado sobre un muro en (2,5)
+StackTrace :
+  at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:263)
+  at main.domain.GameConfiguration.validate(GameConfiguration.java:250)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+  at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+  at main.presentation.GameGUI.startGame(GameGUI.java:93)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+may 16, 2026 5:30:30 P. M. main.domain.GameConfiguration parseLineContent
+SEVERE: Token desconocido en línea 15: LIFE
+may 16, 2026 5:30:30 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+[CONFIG_INVALID] Token desconocido en línea 15: LIFE
+	at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+	at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+	at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+	at main.presentation.GameGUI.startGame(GameGUI.java:93)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:30:30
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/demo_final.txt: Token desconocido en línea 15: LIFE
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : Token desconocido en línea 15: LIFE
+StackTrace :
+  at main.domain.GameConfiguration.parseLineContent(GameConfiguration.java:135)
+  at main.domain.GameConfiguration.parseLine(GameConfiguration.java:93)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:60)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+  at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+  at main.presentation.GameGUI.startGame(GameGUI.java:93)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+
+[INFO] 2026-05-16 17:35:12 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:35:18 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:35:22 — Moneda skin: Jugador 1 cambió a Rojo (Blinky) hasta morir
+
+[INFO] 2026-05-16 17:35:27 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:35:30 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:35:30 — Moneda skin: Jugador 1 cambió a Rojo (Blinky) hasta morir
+
+[INFO] 2026-05-16 17:35:51 — Moneda skin: Jugador 1 cambió a Verde (Clyde) hasta morir
+
+[INFO] 2026-05-16 17:35:52 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:35:55 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:36:00 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:36:07 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:36:14 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:36:42 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:36:45 — Checkpoint intermedio activado — monedas previas fijadas
+
+[INFO] 2026-05-16 17:36:51 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:36:52 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
+
+[INFO] 2026-05-16 17:36:57 — Moneda skin: Jugador 1 cambió a Verde (Clyde) hasta morir
+may 16, 2026 5:37:20 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (2,5)
+may 16, 2026 5:37:20 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+[CONFIG_INVALID] ENEMY colocado sobre un muro en (2,5)
+	at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:346)
+	at main.domain.GameConfiguration.validate(GameConfiguration.java:333)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+	at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+	at main.presentation.GameGUI.startGame(GameGUI.java:93)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:37:20
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : ENEMY colocado sobre un muro en (2,5)
+StackTrace :
+  at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:346)
+  at main.domain.GameConfiguration.validate(GameConfiguration.java:333)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+  at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+  at main.presentation.GameGUI.startGame(GameGUI.java:93)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+may 16, 2026 5:37:26 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (2,5)
+may 16, 2026 5:37:26 P. M. main.presentation.GameGUI handleGameError
+SEVERE: Error en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+[CONFIG_INVALID] ENEMY colocado sobre un muro en (2,5)
+	at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:346)
+	at main.domain.GameConfiguration.validate(GameConfiguration.java:333)
+	at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+	at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+	at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+	at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+	at main.presentation.GameGUI.startGame(GameGUI.java:93)
+	at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+	at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+
+════════════════════════════════════════════════════════════
+[ERROR] 2026-05-16 17:37:26
+────────────────────────────────────────────────────────────
+Mensaje    : [CONFIG_INVALID] en carga de nivel: configs/level3.txt: ENEMY colocado sobre un muro en (2,5)
+Excepción  : main.domain.InvalidLevelFormatException
+Detalle    : ENEMY colocado sobre un muro en (2,5)
+StackTrace :
+  at main.domain.GameConfiguration.validateNotOnWall(GameConfiguration.java:346)
+  at main.domain.GameConfiguration.validate(GameConfiguration.java:333)
+  at main.domain.GameConfiguration.load(GameConfiguration.java:83)
+  at main.domain.HardestGame.loadConfiguration(HardestGame.java:120)
+  at main.presentation.GameGUI.loadLevel(GameGUI.java:255)
+  at main.presentation.GameGUI.beginGameSession(GameGUI.java:230)
+  at main.presentation.GameGUI.startGame(GameGUI.java:93)
+  at main.presentation.MenuScreen.fireStart(MenuScreen.java:166)
+  at main.presentation.MenuScreen.lambda$buildComponents$0(MenuScreen.java:144)
+  at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+  at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2314)
+  at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:407)
+  at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+  at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+  at java.desktop/java.awt.Component.processMouseEvent(Component.java:6576)
+  at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3404)
+  at java.desktop/java.awt.Component.processEvent(Component.java:6341)
+  at java.desktop/java.awt.Container.processEvent(Container.java:2260)
+  at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4958)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4916)
+  at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4559)
+  at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4500)
+  at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2304)
+  at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2671)
+  at java.desktop/java.awt.Component.dispatchEvent(Component.java:4790)
+  at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:725)
+  at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+  at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+════════════════════════════════════════════════════════════
+may 16, 2026 5:43:41 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (5,11)
+may 16, 2026 5:44:17 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (3,8)
+may 16, 2026 5:44:17 P. M. main.domain.GameConfiguration validate
+SEVERE: Falta SAFE_START en la configuración
+may 16, 2026 5:44:17 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: COIN colocado sobre un muro en (2,4)
+may 16, 2026 5:44:52 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (3,7)
+may 16, 2026 5:45:17 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: ENEMY colocado sobre un muro en (3,19)
+may 16, 2026 5:45:39 P. M. main.domain.GameConfiguration validateNotOnWall
+SEVERE: POWERUP colocado sobre un muro en (4,24)
+
+[INFO] 2026-05-16 17:48:24 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:48:30 — Moneda skin: Jugador 1 cambió a Azul (Inky) hasta morir
+
+[INFO] 2026-05-16 17:48:45 — Vida extra para Jugador 1 (total: 1)
+
+[INFO] 2026-05-16 17:48:48 — Vida extra absorbió un golpe para Jugador 1 (restantes: 0)
