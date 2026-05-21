@@ -1,0 +1,82 @@
+# Nivel 1 = diseño referencia (grid exacto):
+# - Verdes 4×8 | Centro ajedrezado 10×6 | Pasillos 2 cols | L inferior izq y superior der 2×2
+# Tablero 8 filas × 22 columnas (lavanda donde hay WALL).
+
+ROWS 8
+COLS 22
+TIME 180
+
+SAFE_START 0 0 8 4
+SAFE_FINAL 0 18 8 4
+
+# Área de peligro: filas 1–6 (6 altura), columnas 6–15 (10 anchura)
+COIN YELLOW 2 8
+COIN YELLOW 2 10
+COIN YELLOW 4 9
+COIN YELLOW 4 11
+COIN YELLOW 5 12
+COIN YELLOW 5 13
+COIN YELLOW 3 8
+COIN YELLOW 6 10
+COIN SKIN RED 4 10
+COIN SKIN BLUE 5 11
+
+# Cuatro horizontales misma velocidad: 1 y 3 desde la izquierda (LEFT), 2 y 4 desde la derecha (RIGHT)
+ENEMY BASIC 2 6 HORIZONTAL LEFT
+ENEMY BASIC 3 15 HORIZONTAL RIGHT
+ENEMY BASIC 4 6 HORIZONTAL LEFT
+ENEMY BASIC 5 15 HORIZONTAL RIGHT
+
+# Fila 0: solo hueco entre verdes y el L superior derecho (cols 16–17)
+WALL 0 4
+WALL 0 5
+WALL 0 6
+WALL 0 7
+WALL 0 8
+WALL 0 9
+WALL 0 10
+WALL 0 11
+WALL 0 12
+WALL 0 13
+WALL 0 14
+WALL 0 15
+
+# Fila 1: bloqueo cols 4–5 (entrada izquierda solo por abajo)
+WALL 1 4
+WALL 1 5
+
+# Filas 2–5: bloqueo cols 4–5 y cols 16–17 (salida derecha solo por arriba)
+WALL 2 4
+WALL 2 5
+WALL 2 16
+WALL 2 17
+WALL 3 4
+WALL 3 5
+WALL 3 16
+WALL 3 17
+WALL 4 4
+WALL 4 5
+WALL 4 16
+WALL 4 17
+WALL 5 4
+WALL 5 5
+WALL 5 16
+WALL 5 17
+
+# Fila 6: bloqueo derecho bajo el centro; cols 4–5 son el L inferior
+WALL 6 16
+WALL 6 17
+
+# Fila 7: muro bajo el centro ajedrezado
+WALL 7 6
+WALL 7 7
+WALL 7 8
+WALL 7 9
+WALL 7 10
+WALL 7 11
+WALL 7 12
+WALL 7 13
+WALL 7 14
+WALL 7 15
+WALL 7 16
+WALL 7 17
