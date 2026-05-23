@@ -304,3 +304,4 @@ Escuela Colombiana de Ingeniería Julio Garavito. (2026). Enunciado del Proyecto
 ---
 
 *Última actualización: mayo 2026*
+*Nota Esperada: 5.0*
