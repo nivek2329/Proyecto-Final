@@ -1,0 +1,95 @@
+# Nivel 3 – La Cortina Vertical
+# Tablero 8 × 26 — enemigos verticales en parejas (dos filas adyacentes, misma columna)
+# El par ocupa filas N y N+1: al tener la misma velocidad siempre se mueven juntos.
+#
+# Ruta en S forzada por dos muros horizontales:
+#   Muro superior-izq (fila 2, cols 4-12) → el jugador debe rodear por arriba o abajo
+#   Muro inferior-der (fila 5, cols 14-22) → obliga a cruzar el centro
+#
+# Zona segura izquierda : filas 2-5, cols 0-1
+# Zona segura derecha  : filas 2-5, cols 24-25
+ROWS 8
+COLS 26
+TIME 200
+SAFE_START 2 0 4 2
+SAFE_FINAL 2 24 4 2
+# ── Monedas (6) ────────────────────────────────────────────────────────────
+# Arriba del muro superior (zona alta difícil)
+COIN YELLOW 0 15
+COIN YELLOW 1 14
+# Debajo del muro inferior (zona baja difícil)
+COIN YELLOW 5 5
+COIN YELLOW 6 8
+COIN YELLOW 6 12
+# Zona de transición central (junto al par central)
+COIN YELLOW 3 16
+# ── Enemigos verticales en parejas ─────────────────────────────────────────
+# PAREJA = dos VERTICAL en la misma columna, filas N y N+1.
+# Con la misma velocidad de tick se mueven completamente sincronizados.
+#
+# ▲ PAREJAS SUPERIORES (filas 0-1)
+# Rebotan entre fila 0 (borde) y fila 2 (muro en cols 4-12)
+# → columnas donde aplica el muro: 4, 6, 8, 10, 12
+ENEMY VERTICAL 0 4
+ENEMY VERTICAL 1 4
+ENEMY VERTICAL 0 6
+ENEMY VERTICAL 1 6
+ENEMY VERTICAL 0 8
+ENEMY VERTICAL 1 8
+ENEMY VERTICAL 0 10
+ENEMY VERTICAL 1 10
+ENEMY VERTICAL 0 12
+ENEMY VERTICAL 1 12
+# → columnas sin muro de corte: 16, 18, 20, 22 (barren toda la altura)
+ENEMY VERTICAL 0 16
+ENEMY VERTICAL 1 16
+ENEMY VERTICAL 0 18
+ENEMY VERTICAL 1 18
+ENEMY VERTICAL 0 20
+ENEMY VERTICAL 1 20
+ENEMY VERTICAL 0 22
+ENEMY VERTICAL 1 22
+# ▼ PAREJAS INFERIORES (filas 6-7)
+# Rebotan entre fila 5 (muro en cols 14-22) y fila 7 (borde)
+# → columnas sin muro inferior: 4, 6, 10 (barren de fila 2 hacia abajo)
+ENEMY VERTICAL 6 4
+ENEMY VERTICAL 7 4
+ENEMY VERTICAL 6 6
+ENEMY VERTICAL 7 6
+ENEMY VERTICAL 6 10
+ENEMY VERTICAL 7 10
+# → columnas con muro inferior: 14, 16, 18, 20, 22 (confinadas filas 6-7)
+ENEMY VERTICAL 6 14
+ENEMY VERTICAL 7 14
+ENEMY VERTICAL 6 16
+ENEMY VERTICAL 7 16
+ENEMY VERTICAL 6 18
+ENEMY VERTICAL 7 18
+ENEMY VERTICAL 6 20
+ENEMY VERTICAL 7 20
+ENEMY VERTICAL 6 22
+ENEMY VERTICAL 7 22
+# ◆ PAREJA CENTRAL (filas 3-4) — obstáculo en zona de transición
+ENEMY VERTICAL 3 14
+ENEMY VERTICAL 4 14
+# ── Muros ──────────────────────────────────────────────────────────────────
+# Muro superior-izquierdo: fuerza a ir por arriba (filas 0-1) o por abajo (filas 3+)
+WALL 2 4
+WALL 2 5
+WALL 2 6
+WALL 2 7
+WALL 2 8
+WALL 2 9
+WALL 2 10
+WALL 2 11
+WALL 2 12
+# Muro inferior-derecho: fuerza a cruzar por zona central (filas 2-4)
+WALL 5 14
+WALL 5 15
+WALL 5 16
+WALL 5 17
+WALL 5 18
+WALL 5 19
+WALL 5 20
+WALL 5 21
+WALL 5 22
