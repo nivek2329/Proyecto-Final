@@ -1,6 +1,6 @@
 # Reporte de Análisis Dinámico (Cobertura de Código)
 
-A continuación se detalla el proceso de evaluación de cobertura del proyecto **The DOPO Hardest Game** mediante **JUnit 4** y **EclEmma** (plugin de cobertura para IntelliJ IDEA), cumpliendo con los estándares de calidad definidos para la entrega final.
+A continuación se detalla el proceso de evaluación de cobertura del proyecto **The DOPO Hardest Game** mediante **JUnit 4** y  (plugin de cobertura para IntelliJ IDEA), cumpliendo con los estándares de calidad definidos para la entrega final.
 
 ---
 
@@ -8,21 +8,18 @@ A continuación se detalla el proceso de evaluación de cobertura del proyecto *
 
 Se ejecutó la suite de pruebas base del proyecto sobre el paquete `main.domain`, obteniendo los siguientes resultados preliminares:
 
-| Métrica | Valor inicial |
-|---------|---------------|
-| Clases cubiertas (domain) | 87% (26/30) |
-| Métodos cubiertos (domain) | ~66% |
-| Líneas cubiertas (domain) | **73%** |
-| Tests ejecutados | ~57 tests |
-| Tests fallidos | 0 |
+
+
+![Reporte Inicial de Cobertura](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/D1.png?raw=true)
+![Reporte Inicial de Cobertura](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/D1.1.png?raw=true)
 
 **Clases con menor cobertura inicial:**
-- `HardestGame` (74% métodos, 58% líneas) — faltaban ramas de victoria, pausa, dos jugadores y snapshot.
-- `GameConfiguration` (100% métodos, 71% líneas) — faltaban rutas de error de parsing.
-- `GameSnapshot` (15% métodos, 15% líneas) — no tenía tests unitarios.
-- `GreenPlayer` (35% métodos, 35% líneas) — solo se testeaba creación básica.
-- `GameLogger` (70% métodos, 54% líneas) — faltaban ramas de reporte de usuario.
-- `PatrolEnemy` (50% métodos, 72% líneas) — faltaban escenarios de waypoints vacíos.
+- `HardestGame` (74% métodos, 58% líneas)  faltaban ramas de victoria, pausa, dos jugadores y snapshot.
+- `GameConfiguration` (100% métodos, 71% líneas)  faltaban rutas de error de parsing.
+- `GameSnapshot` (15% métodos, 15% líneas)  no tenía tests unitarios.
+- `GreenPlayer` (35% métodos, 35% líneas)  solo se testeaba creación básica.
+- `GameLogger` (70% métodos, 54% líneas)  faltaban ramas de reporte de usuario.
+- `PatrolEnemy` (50% métodos, 72% líneas)  faltaban escenarios de waypoints vacíos.
 
 ---
 
@@ -41,10 +38,10 @@ Se identificaron las siguientes brechas críticas y se diseñó un plan de ampli
 - **Snapshot:** Captura y restauración completa del estado de partida.
 
 ### 2.2 Tests unitarios para clases huérfanas
-- `GameSnapshotTest` — getters de todas las clases anidadas (`PlayerSnapshot`, `CoinSnapshot`, `EnemySnapshot`, `PowerUpSnapshot`).
-- `GreenPlayerTest` — escudo, absorción de golpe, inmunidad temporal, ralentización.
-- `ExceptionsTest` — constructores de excepciones, logging de errores, reportes de usuario.
-- `GameLogTest` — inicialización del logger, manejo de IOException.
+- `GameSnapshotTest`  getters de todas las clases anidadas (`PlayerSnapshot`, `CoinSnapshot`, `EnemySnapshot`, `PowerUpSnapshot`).
+- `GreenPlayerTest`  escudo, absorción de golpe, inmunidad temporal, ralentización.
+- `ExceptionsTest`  constructores de excepciones, logging de errores, reportes de usuario.
+- `GameLogTest`  inicialización del logger, manejo de IOException.
 
 ### 2.3 Tests de configuración y parsing
 - Direcciones `HORIZONTAL LEFT/RIGHT`.
@@ -54,64 +51,19 @@ Se identificaron las siguientes brechas críticas y se diseñó un plan de ampli
 - Casos de error: archivo inexistente, formato inválido, entidades fuera de límites, monedas sobre muros.
 
 ### 2.4 Tests de integración
-- `PowerUpIntegrationTest` — ciclo completo de bomba, vida extra, protección de enemigo y persistencia tras muerte.
-- `LoadAllLevelsTest` — carga correcta de los 6 niveles empaquetados (`level1.txt` a `level_duelo.txt`).
+- `PowerUpIntegrationTest`  ciclo completo de bomba, vida extra, protección de enemigo y persistencia tras muerte.
+- `LoadAllLevelsTest`  carga correcta de los 6 niveles empaquetados (`level1.txt` a `level_duelo.txt`).
 
 ---
 
 ## 3. Estado Final de Cobertura
 
-Tras la ampliación de la suite de pruebas, los resultados finales son:
+Tras la ampliación  de pruebas, los resultados finales son:
 
 ### 3.1 Resumen global
 
-| Métrica | Valor final |
-|---------|-------------|
-| **Tests totales** | **131 tests** |
-| **Tests pasando** | **131 (100%)** |
-| **Tests fallidos** | **0** |
-| **Tiempo de ejecución** | ~765 ms |
-| **Clases cubiertas (all)** | **100% (53/53)** |
-| **Métodos cubiertos (all)** | **97% (442/453)** |
-| **Líneas cubiertas (all)** | **95% (2112/2221)** |
-| **Branch coverage (all)** | **82% (508/618)** |
+![Reporte Final de Cobertura ](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/D2.png?raw=true)
 
-### 3.2 Cobertura por paquete
-
-| Paquete | Clases | Métodos | Líneas | Branch |
-|---------|--------|---------|--------|--------|
-| `main.domain` | 100% (31/31) | 96% (275/285) | **91%** (1001/1096) | 80% (444/552) |
-| `test` | 100% (22/22) | 100% (167/167) | 98% (1111/1125) | 100% (64/64) |
-
-### 3.3 Cobertura detallada por clase (dominio)
-
-| Clase | Clase % | Método % | Línea % | Branch % |
-|-------|---------|----------|---------|----------|
-| `AcceleratedEnemy` | 100% | 100% | 88% | 70% |
-| `BasicEnemy` | 100% | 100% | 100% | 100% |
-| `BluePlayer` | 100% | 100% | 100% | 100% |
-| `Board` | 100% | 100% | 88% | 87% |
-| `Bomb` | 100% | 100% | 100% | 100% |
-| `Coin` | 100% | 100% | 70% | 75% |
-| `Enemy` | 100% | 100% | 100% | 100% |
-| `GameConfiguration` | 100% | 100% | 93% | 89% |
-| `GameLog` | 100% | 100% | 84% | 50% |
-| `GameLogger` | 100% | 100% | 83% | 75% |
-| `GameSnapshot` | 100% | 100% | 100% | 100% |
-| `GreenPlayer` | 100% | 100% | 100% | 90% |
-| `GridEntity` | 100% | 100% | 100% | 100% |
-| `HardestGame` | 100% | 95% | 88% | 75% |
-| `HardestGameException` | 100% | 100% | 100% | 100% |
-| `LifeSource` | 100% | 100% | 78% | 50% |
-| `PatrolEnemy` | 100% | 100% | 100% | 100% |
-| `Player` | 100% | 100% | 80% | — |
-| `PowerUp` | 100% | 100% | 100% | 100% |
-| `RedPlayer` | 100% | 100% | 100% | 100% |
-| `SkinCoin` | 100% | 100% | 100% | 100% |
-| `SpinnerEnemy` | 100% | 100% | 100% | 100% |
-| `VerticalEnemy` | 100% | 100% | 100% | 100% |
-| `YellowCoin` | 100% | 100% | 100% | 100% |
-| `Zone` | 100% | 100% | 100% | 100% |
 
 > **Nota:** Las clases del paquete `main.presentation` (`GameGUI`, `BoardPanel`, `MenuScreen`, `ErrorReportDialog`, etc.) **no se incluyen en el cálculo de cobertura** porque dependen de componentes Swing y eventos de renderizado que no pueden ser automatizados con JUnit estándar. Esto es una limitación técnica aceptada en proyectos con interfaz gráfica.
 
