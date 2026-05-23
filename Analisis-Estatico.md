@@ -8,15 +8,8 @@ Se realizó un análisis exhaustivo del código fuente de **The DOPO Hardest Gam
 
 El escaneo inicial detectó un total de **1.193 violaciones** distribuidas en las siguientes categorías:
 
-| Categoría | Violaciones | Severidad principal |
-|-----------|-------------|---------------------|
-| **documentation** | 367 | `CommentRequired` (336), `CommentSize` (31) |
-| **bestpractices** | 190 | `GuardLogStatement` (4), `SystemPrintln` (3), `MissingOverride` (13), `ImplicitFunctionalInterface` (1) |
-| **errorprone** | 87 | `AvoidLiteralsInIfCondition` (25), `AvoidDuplicateLiterals` (24), `NullAssignment` (20) |
-| **codestyle** | ~122 | Convenciones de nombres y formato |
-| **design** | 53 | Acoplamiento y complejidad ciclomática |
-| **performance** | 38 | `AppendCharacterWithChar` (19), `ConsecutiveAppendsShouldReuse` (10) |
-| **multithreading** | 5 | `AvoidUsingVolatile` (3), `AvoidSynchronizedAtMethodLevel` (1) |
+![Reporte Inicial PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/E1.png?raw=true)
+![Reporte Inicial PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/E1.1.png?raw=true)
 
 > **Observación crítica:** La mayoría de las violaciones en `documentation` corresponden a clases de test (`test.*`) y a métodos autoexplicativos de getters/setters en el dominio. Las de `errorprone` se concentran en el parser de configuración (`GameConfiguration`) y en la GUI (`GameGUI`).
 
@@ -46,32 +39,24 @@ El proceso de corrección se estructuró en **tres ciclos iterativos** enfocados
 
 ## 3. Justificación de Violaciones Residuales
 
-A pesar del proceso de mejora, persisten **violaciones intencionalmente no corregidas** por los siguientes criterios técnicos:
+Aunque corregimos la gran mayoría de las alertas, dejamos estas quietas a propósito porque cambiarlas empeoraba el código o no tenía sentido para esta entrega:
 
-| Violación | Justificación técnica |
-|-----------|----------------------|
-| **`AvoidLiteralsInIfCondition`** (25) | En `GameConfiguration.parseLine()` los literales corresponden a tokens de archivo de nivel ("ROWS", "COIN", "ENEMY"). Extraerlos a constantes no mejora la legibilidad del parser. |
-| **`AvoidDuplicateLiterals`** (24) | Duplicados en strings de logging y mensajes de excepción. Centralizarlos en constantes aumentaría la complejidad sin beneficio funcional. |
-| **`GuardLogStatement`** (4) | En `GameGUI.gameTick()` y `HardestGame.resetPlayerSkinOnDeath()`; los logs son de severidad `SEVERE` y siempre se ejecutan en contextos de error real. |
-| **`AvoidBranchingStatementAsLastInLoop`** (1) | En `GameGUI.computeMachineMove()`; el `return` es intencional para abortar el cálculo cuando la máquina queda sin objetivos válidos. |
-| **`AvoidUsingVolatile`** (3) | En `GameLog` (flag `initialized`) y `GameGUI` (referencias estáticas). El acceso concurrente está protegido por `synchronized`. |
-| **`NullAssignment`** (20) | Asignaciones de `null` en tearDown de tests y en liberación de recursos. Patrón estándar de JUnit. |
-| **`CommentRequired`** residual | Métodos privados autoexplicativos y clases de test donde el nombre del método ya describe el comportamiento. |
-
+| Regla PMD | ¿Por qué se dejó así?  |
+| :--- | :--- |
+| **`AvoidLiteralsInIfCondition`** | Se activa porque el código busca palabras directas como "ROWS", "COIN" o "ENEMY" al leer los archivos de los niveles. Es mucho más fácil de leer y entender el código si dejamos la palabra directa ahí, en lugar de inventar una constante para cada una. |
+| **`AvoidDuplicateLiterals`** | Aparece cuando repetimos el mismo texto en los mensajes de error o en los reportes (los logs). Crear una variable global para textos que solo se usan al avisar un error no aporta nada al juego y solo llena el código de líneas innecesarias. |
+| **`GuardLogStatement`** | PMD pide que revisemos si el sistema de reportes está encendido antes de escribir. Pero estas alertas están en errores graves que **sí o sí** deben guardarse en el archivo de texto, por lo que esa revisión previa no hace falta. |
+| **`AvoidBranchingStatementAsLastInLoop`** | Se usa un `return` para frenar en seco a la Inteligencia Artificial de la máquina si se queda sin monedas que buscar. Es la forma más rápida y limpia de apagar la IA en ese instante para que no se quede pensando en la nada. |
+| **`AvoidUsingVolatile`** | Usamos `volatile` para avisarle a la memoria del computador que esa variable cambia rápido entre hilos. Como todo el proceso ya está protegido de forma segura con `synchronized`, la alerta se puede ignorar sin riesgos. |
+| **`NullAssignment`** | Dejar las variables en `null` al final de los archivos de prueba (`tearDown`) es una práctica estándar en JUnit. Sirve para limpiar la memoria de la computadora y que una prueba no ensucie o afecte el resultado de la siguiente. |
+| **`CommentRequired`** | PMD se queja de que faltan comentarios Javadoc en algunos métodos de prueba o funciones privadas muy pequeñas. No los pusimos porque el nombre del método ya explica exactamente lo que hace (ej. `testPlayerDiesWhenHittingEnemy()`); poner un comentario encima sería repetir lo mismo. |
 ---
 
 ## 4. Resultado Final
 
 Tras los tres ciclos de mejora, se logró una reducción neta significativa en las categorías críticas:
 
-| Categoría | Estado inicial | Estado final | Impacto |
-|-----------|---------------|--------------|---------|
-| **bestpractices** | 190 | ~120 | **Reducción del 37%** |
-| **errorprone** | 87 | ~60 | **Reducción del 31%** |
-| **documentation** | 367 | ~250 | Mejora sustancial en dominio |
-| **performance** | 38 | ~25 | Optimización de StringBuilder |
-| **multithreading** | 5 | 5 | Mantenido por diseño correcto |
-| **TOTAL ESTIMADO** | **~1.193** | **~850** | **Reducción global del ~29%** |
+![Reporte Final PMD](https://github.com/nivek2329/Proyecto-Final/blob/main/imagenes/E2.png?raw=true)
 
 > **Nota:** Las cifras finales son estimadas porque PMD recalcula dinámicamente al modificar el código. El objetivo no fue eliminar violaciones a costa de legibilidad, sino **garantizar que el código de dominio esté libre de alertas críticas** (`errorprone`, `bestpractices`) mientras se documentan las decisiones de diseño.
 
@@ -88,9 +73,3 @@ El análisis estático demuestra que **The DOPO Hardest Game** cumple con están
 
 ---
 
-## Anexo: Rule Sets aplicados
-
-```
-bestpractices, codestyle, design, documentation,
-errorprone, multithreading, performance, security
-```
