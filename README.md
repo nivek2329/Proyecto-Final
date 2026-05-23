@@ -1,8 +1,8 @@
 # The DOPO Hardest Game — Entrega Final
 
-Clon en Java (Swing) del clásico *The World's Hardest Game*, desarrollado como proyecto académico para el curso **EPRE (Elementos de Programación)**. Incluye tablero configurable por archivos de texto, múltiples tipos de enemigos, jugadores con habilidades distintas, multijugador local (PvP / PvM), sistema de guardado de partidas y reporte de errores.
+Clon en Java  del juego *The World's Hardest Game*, para **DOPO (DESARROLLO ORIENTADO A OBJETOS)**. Incluye tablero configurable por archivos de texto, múltiples tipos de enemigos, jugadores con habilidades distintas, multijugador local (PvP / PvM), sistema de guardado de partidas y reporte de errores.
 
-**Curso:** EPRE 2026-1  
+**Curso:** DOPO 2026-1  
 **Autor:** Angel-Garcia  
 **Versión:** 2026-1 (Entrega Final)
 
@@ -18,10 +18,8 @@ Clon en Java (Swing) del clásico *The World's Hardest Game*, desarrollado como 
 6. [Niveles incluidos](#niveles-incluidos)
 7. [Formato de archivo de nivel](#formato-de-archivo-de-nivel)
 8. [Controles](#controles)
-9. [Estructura del repositorio](#estructura-del-repositorio)
+9. [Referencias](#referencias)
 10. [Análisis de calidad](#análisis-de-calidad)
-11. [Requisitos no contemplados](#requisitos-no-contemplados)
-12. [Licencia](#licencia)
 
 ---
 
@@ -181,9 +179,7 @@ El proyecto se construyó de forma incremental mediante 5 ciclos funcionales. Ca
 |--------|-----------|---------------------|
 | **Singleton** | Logger único para toda la aplicación | `GameLog`, `GameLogger` |
 | **Factory Method** | Creación de jugadores según skin seleccionada | `HardestGame.createPlayer`, `createPlayerBySkin` |
-| **Template Method** | Esqueleto común con pasos específicos en subclases | `Player`, `Enemy`, `Coin`, `PowerUp` |
 | **Strategy** | Algoritmos de movimiento intercambiables | `Player` (Red/Blue/Green), `Enemy` (Basic/Vertical/Accel/Patrol/Spinner) |
-| **Memento** | Captura y restauración del estado de partida | `GameSnapshot` |
 | **State** | Estados finitos del juego | `HardestGame.State` (`PLAYING`, `PAUSED`, `WON`, `LOST`) |
 | **Observer** | Notificación de actualización en cada tick | `Updatable` interface |
 | **MVC** | Separación modelo-vista-controlador | `main.domain` / `main.presentation` |
@@ -194,9 +190,6 @@ El proyecto se construyó de forma incremental mediante 5 ciclos funcionales. Ca
 |-----------|-----------|
 | **SRP** (Responsabilidad Única) | `Board` solo gestiona celdas; `GameConfiguration` solo parsea archivos; `GameLog` solo logging |
 | **OCP** (Abierto/Cerrado) | Nuevos tipos de `Player`, `Enemy` y `Coin` se añaden sin modificar código existente |
-| **LSP** (Sustitución de Liskov) | Cualquier subclase de `Player` o `Enemy` funciona en el contexto de `HardestGame` |
-| **ISP** (Segregación de Interfaces) | `GridEntity` (posición + color) y `Updatable` (tick) son interfaces pequeñas y específicas |
-| **DIP** (Inversión de Dependencias) | `HardestGame` depende de abstracciones (`Player`, `Enemy`, `Coin`, `PowerUp`), no de implementaciones concretas |
 
 ### Otros conceptos DOPO
 
@@ -269,92 +262,22 @@ WALL <fila> <col>
 
 ---
 
-## Estructura del repositorio
+## Referencias
 
 ```
-the-dopo-hardest-game/
-├── README.md
-├── ANALISIS_ESTATICO.md       # Reporte PMD
-├── ANALISIS_DINAMICO.md       # Reporte de cobertura JUnit/EclEmma
-├── configs/                   # Niveles (.txt)
-│   ├── level1.txt
-│   ├── level2.txt
-│   ├── level3.txt
-│   ├── demo_final.txt
-│   ├── nivelsupremo.txt
-│   └── level_duelo.txt
-├── logs/                      # Errores y reportes de usuario (generados al jugar)
-│   ├── game_errors.log
-│   └── user_reports.log
-├── saves/                     # Partidas guardadas (.dopo)
-└── epre/
-    └── src/
-        ├── main/
-        │   ├── domain/        # Lógica de negocio
-        │   │   ├── HardestGame.java
-        │   │   ├── Board.java
-        │   │   ├── Player.java
-        │   │   ├── RedPlayer.java
-        │   │   ├── BluePlayer.java
-        │   │   ├── GreenPlayer.java
-        │   │   ├── Enemy.java
-        │   │   ├── BasicEnemy.java
-        │   │   ├── VerticalEnemy.java
-        │   │   ├── AcceleratedEnemy.java
-        │   │   ├── PatrolEnemy.java
-        │   │   ├── SpinnerEnemy.java
-        │   │   ├── Coin.java
-        │   │   ├── YellowCoin.java
-        │   │   ├── SkinCoin.java
-        │   │   ├── PowerUp.java
-        │   │   ├── Bomb.java
-        │   │   ├── LifeSource.java
-        │   │   ├── Zone.java
-        │   │   ├── GameConfiguration.java
-        │   │   ├── GameSnapshot.java
-        │   │   ├── GameLog.java
-        │   │   ├── GameLogger.java
-        │   │   ├── HardestGameException.java
-        │   │   ├── GridEntity.java
-        │   │   └── Updatable.java
-        │   └── presentation/   # Interfaz gráfica
-        │       ├── GameGUI.java
-        │       ├── BoardPanel.java
-        │       ├── MenuScreen.java
-        │       ├── GameSetup.java
-        │       ├── GameSaveDialog.java
-        │       ├── GameSaveIO.java
-        │       └── ErrorReportDialog.java
-        └── test/               # Pruebas unitarias e integración
-            ├── AcceleratedEnemyTest.java
-            ├── BasicEnemyTest.java
-            ├── BluePlayerTest.java
-            ├── BoardTest.java
-            ├── BombTest.java
-            ├── ExceptionsTest.java
-            ├── GameConfigurationTest.java
-            ├── GameLogTest.java
-            ├── GameSnapshotTest.java
-            ├── GreenPlayerTest.java
-            ├── HardestGameTest.java
-            ├── LifeSourceTest.java
-            ├── LoadAllLevelsTest.java
-            ├── PatrolEnemyTest.java
-            ├── PowerUpIntegrationTest.java
-            ├── PowerUpTest.java
-            ├── RedPlayerTest.java
-            ├── SkinCoinTest.java
-            ├── SpinnerEnemyTest.java
-            ├── VerticalEnemyTest.java
-            ├── YellowCoinTest.java
-            └── ZoneTest.java
+Barnes, D. J., & Kölling, M. (2016). Objects First with Java: A Practical Introduction Using BlueJ (6th ed.). Pearson.
+
+Oracle. (2024). Java SE 21 Official Documentation.
+
+Escuela Colombiana de Ingeniería Julio Garavito. (2026). Enunciado del Proyecto de Aula - POO.
+
 ```
 
 ---
 
 ## Análisis de calidad
 
-### Cobertura de tests (EclEmma)
+### Cobertura de tests 
 
 | Métrica | Valor |
 |---------|-------|
@@ -377,28 +300,6 @@ the-dopo-hardest-game/
 > Ver archivos `ANALISIS_ESTATICO.md` y `ANALISIS_DINAMICO.md` para el detalle completo.
 
 ---
-
-## Requisitos no contemplados
-
-Los siguientes puntos **no se implementaron** por alcance, tiempo o porque quedaron fuera del enunciado acordado:
-
-| Área | Requisito no considerado |
-|------|-------------------------|
-| **Gráficos** | Sprites, animaciones de personajes o tiles artísticos (solo formas geométricas: cuadrados, círculos, colores planos). |
-| **Audio** | Música de fondo, efectos de sonido o voz. |
-| **Enemigos** | Formaciones en X que **giran como un solo cuerpo**; cada enemigo se mueve con su propia lógica independiente. |
-| **Red** | Multijugador en línea o por red local. |
-| **Persistencia avanzada** | Base de datos, tabla de puntuaciones global, perfiles de usuario. |
-
----
-
-## Licencia y uso académico
-
-Proyecto con fines exclusivamente educativos (EPRE 2026-1, Universidad Nacional de Ingeniería — UNI, Perú).
-
-- **No redistribuir** sin autorización del docente del curso.
-- **No publicar** en repositorios públicos sin permiso explícito.
-- Consultar con el docente antes de reutilizar código fuera del contexto académico.
 
 ---
 
