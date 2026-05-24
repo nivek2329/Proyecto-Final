@@ -56,12 +56,6 @@ java -cp out main.presentation.GameGUI
 
 > **Importante:** Ejecutar desde la raíz del proyecto (`epre/`) para que las rutas relativas (`configs/`, `logs/`, `saves/`) funcionen correctamente.
 
-### Ejecutar desde IntelliJ IDEA
-
-1. Abrir el directorio `epre/` como proyecto.
-2. Marcar `src/main` como *Sources Root* y `src/test` como *Test Sources Root*.
-3. Añadir JUnit 4.13.1 a las dependencias del módulo.
-4. Ejecutar la clase `main.presentation.GameGUI` (botón derecho → *Run*).
 
 ---
 
