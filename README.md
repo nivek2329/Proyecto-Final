@@ -20,6 +20,7 @@ Clon en Java  del juego *The World's Hardest Game*, para **DOPO (DESARROLLO ORIE
 8. [Controles](#controles)
 9. [Referencias](#referencias)
 10. [Análisis de calidad](#análisis-de-calidad)
+11. [Retrospectiva](#retrospectiva)
 
 ---
 
@@ -34,8 +35,8 @@ Clon en Java  del juego *The World's Hardest Game*, para **DOPO (DESARROLLO ORIE
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/<usuario>/the-dopo-hardest-game.git
-cd the-dopo-hardest-game
+git clone https://github.com/<usuario>/Proyecto-Final.git
+cd "Proyecto-Final\The Dopo Hardets Game Version 5 Final"
 ```
 
 > Nota: reemplaza `<usuario>` con tu usuario de GitHub o la URL del repositorio real.
@@ -300,6 +301,38 @@ Escuela Colombiana de Ingeniería Julio Garavito. (2026). Enunciado del Proyecto
 > Ver archivos `ANALISIS_ESTATICO.md` y `ANALISIS_DINAMICO.md` para el detalle completo.
 
 ---
+### Retrospectiva 
+
+
+1. ¿Cuál fue el tiempo total invertido?
+ 
+26 horas García y 26 horas Ángel de trabajo conjunto en casa.
+ 
+2. ¿Cuál es el estado actual del proyecto?
+ 
+Se realizó el proyecto en su totalidad incluyendo  los modos multijugador PvP y PvM, máquina experta con pathfinding BFS, sistema de guardado/carga en formato .dopo, reporte de errores con diálogo modal, y manejo de excepciones con logs estructurados.
+ 
+3. ¿Cuál fue la práctica XP más importante?
+Pair programming, ya que trabajamos todo en conjunto. Cada clase del dominio y presentación fue diseñada y codificada con ambos presentes, lo que evitó inconsistencias en la arquitectura y facilitó la integración entre capas.
+ 
+4. ¿Cuál fue el mayor logro?
+Entender y realizar el proyecto en su totalidad comenzando por:
+- Comprender la jerarquía de clases del dominio (Player, Enemy, Coin, PowerUp)
+- Implementar el patrón Snapshot para guardado/carga de partidas
+- Desarrollar la IA de la máquina con algoritmo BFS que evita enemigos y optimiza recolección de monedas
+- Integrar el manejo de excepciones con HardestGameException y el diálogo automático ErrorReportDialog
+ 
+5. ¿Cuál fue el mayor problema técnico?
+La correcta realización de algunos métodos, especialmente:
+- El pathfinding BFS de la máquina experta (computeMachineMove, shortestDistance, findNextStep)
+- La colisión con jugadores de tamaño diferente (BluePlayer 1.5x requiere hitbox expandida en cruz)
+- Las pruebas de integración entre guardado/carga (GameSaveIO) y restauración de estado (restoreFromSnapshot)
+ 
+6. ¿Qué hicieron bien como equipo?
+Realizamos correctamente la parte de comunicación y realización del proyecto ya que fue todo paso a paso juntos, lo que permitió trabajar en paralelo sin conflictos de integración.
+ 
+7. ¿Qué referencias usaron?
+Algunos comandos de Java buscados en internet (documentación oficial de Oracle para Swing, java.nio.file, y java.util.logging) y recomendaciones de la profesora Irma sobre manejo de excepciones.
 
 ---
 
