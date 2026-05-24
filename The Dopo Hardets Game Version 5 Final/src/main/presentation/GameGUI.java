@@ -225,14 +225,6 @@ public final class GameGUI extends JFrame {
         machineExpert = machineMode && "Máquina experta".equals(setup.getMaquina());
         game.setTwoPlayerMode(machineMode || "Jugador vs jugador".equals(setup.getModalidad()));
         machineTargets.clear();
-
-        if ("Jugador vs jugador".equals(setup.getModalidad())
-                && setup.getSkin1().equals(setup.getSkin2())) {
-            handleGameError("inicio de partida",
-                    new HardestGameException(HardestGameException.INVALID_MULTIPLAYER_CONFIG));
-            return;
-        }
-
         loadLevel(setup.getLevelPath(), snapshot);
     }
 
