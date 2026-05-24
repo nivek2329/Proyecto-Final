@@ -36,7 +36,7 @@ Clon en Java  del juego *The World's Hardest Game*, para **DOPO (DESARROLLO ORIE
 
 ```bash
 git clone https://github.com/<usuario>/Proyecto-Final.git
-cd "Proyecto-Final\The Dopo Hardets Game Version 5 Final"
+
 ```
 
 > Nota: reemplaza `<usuario>` con tu usuario de GitHub o la URL del repositorio real.
@@ -45,11 +45,13 @@ cd "Proyecto-Final\The Dopo Hardets Game Version 5 Final"
 
 ```bash
 # Compilar
-cd epre
-javac -encoding UTF-8 -sourcepath "src/main;src/test" -d out $(find src/main -name "*.java")
+cd "Proyecto-Final\The Dopo Hardets Game Version 5 Final"
+mkdir out
+powershell -Command "javac -encoding UTF-8 -d out (Get-ChildItem -Path src\main -Recurse -Filter '*.java' | Select-Object -ExpandProperty FullName)"
+java -cp out main.presentation.GameGUI
 
 # Ejecutar el juego
-java -cp "out" main.presentation.GameGUI
+java -cp out main.presentation.GameGUI
 ```
 
 > **Importante:** Ejecutar desde la raíz del proyecto (`epre/`) para que las rutas relativas (`configs/`, `logs/`, `saves/`) funcionen correctamente.
