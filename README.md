@@ -64,13 +64,16 @@ java -cp out main.presentation.GameGUI
 ### Desde consola
 
 ```bash
-cd epre
+
+# Descargar JUnit (solo la primera vez)
+
+powershell -Command "Invoke-WebRequest -Uri 'https://repo1.maven.org/maven2/junit/junit/4.13.1/junit-4.13.1.jar' -OutFile 'junit-4.13.1.jar'; Invoke-WebRequest -Uri 'https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar' -OutFile 'hamcrest-core-1.3.jar'"
 
 # Compilar tests
-javac -encoding UTF-8 -sourcepath "src/main;src/test" -d out -cp "out;junit-4.13.1.jar;hamcrest-core-1.3.jar" $(find src -name "*.java")
+powershell -Command "javac -encoding UTF-8 -cp 'out;junit-4.13.1.jar;hamcrest-core-1.3.jar' -d out (Get-ChildItem -Path src\test -Recurse -Filter '*.java' | Select-Object -ExpandProperty FullName)"
 
 # Ejecutar suite completa
-java -cp "out;junit-4.13.1.jar;hamcrest-core-1.3.jar" org.junit.runner.JUnitCore   test.AcceleratedEnemyTest   test.BasicEnemyTest   test.BluePlayerTest   test.BoardTest   test.BombTest   test.ExceptionsTest   test.GameConfigurationTest   test.GameLogTest   test.GameSnapshotTest   test.GreenPlayerTest   test.HardestGameTest   test.LifeSourceTest   test.LoadAllLevelsTest   test.PatrolEnemyTest   test.PowerUpIntegrationTest   test.PowerUpTest   test.RedPlayerTest   test.SkinCoinTest   test.SpinnerEnemyTest   test.VerticalEnemyTest   test.YellowCoinTest   test.ZoneTest
+java -cp "out;junit-4.13.1.jar;hamcrest-core-1.3.jar" org.junit.runner.JUnitCore test.AcceleratedEnemyTest test.BasicEnemyTest test.BluePlayerTest test.BoardTest test.BombTest test.ExceptionsTest test.GameConfigurationTest test.GameLogTest test.GameSnapshotTest test.GreenPlayerTest test.HardestGameTest test.LifeSourceTest test.LoadAllLevelsTest test.PatrolEnemyTest test.PowerUpIntegrationTest test.PowerUpTest test.RedPlayerTest test.SkinCoinTest test.SpinnerEnemyTest test.VerticalEnemyTest test.YellowCoinTest test.ZoneTest
 ```
 
 ### Desde IntelliJ IDEA
