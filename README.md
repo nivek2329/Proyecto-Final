@@ -54,7 +54,7 @@ java -cp out main.presentation.GameGUI
 java -cp out main.presentation.GameGUI
 ```
 
-> **Importante:** Ejecutar desde la raíz del proyecto (`epre/`) para que las rutas relativas (`configs/`, `logs/`, `saves/`) funcionen correctamente.
+> **Importante:** Ejecutar desde la raíz del proyecto para que las rutas relativas (`configs/`, `logs/`, `saves/`) funcionen correctamente.
 
 
 ---
